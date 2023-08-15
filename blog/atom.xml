@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://extremeagile.org/blog</id>
+    <title>Extreme Agile Blog</title>
+    <updated>2021-05-11T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://extremeagile.org/blog"/>
+    <subtitle>Extreme Agile Blog</subtitle>
+    <icon>https://extremeagile.org/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[First Alpha Release]]></title>
+        <id>https://extremeagile.org/blog/first-alpha-release</id>
+        <link href="https://extremeagile.org/blog/first-alpha-release"/>
+        <updated>2021-05-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello welcome everyone to the first blog post and also our first Alpha release.]]></summary>
+        <content type="html"><![CDATA[<p>Hello welcome everyone to the first blog post and also our first Alpha release.</p>]]></content>
+        <author>
+            <name>kanekotic</name>
+            <uri>https://github.com/kanekotic</uri>
+        </author>
+        <category label="release" term="release"/>
+    </entry>
+</feed>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkextremeagile=self.webpackChunkextremeagile||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"First Alpha Release","permalink":"/blog/first-alpha-release"}]}')}}]);
