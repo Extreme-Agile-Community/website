@@ -14,7 +14,3 @@ Extreme Agile is a collaborative community space where we all can bring practice
 
 Do you or your team care about continuous improvement? Are you trying to bring value to your users in a Software Project? are you wanting to learn new ways of doing things or even create new ones?
 If for any of this questions the answer is yes, this is your community!!!
-
-## Ready to get started?
-
-Find out how to define and use your observers in [Quick Start](/docs/quick-start).
