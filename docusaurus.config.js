@@ -74,9 +74,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorials',
+            label: 'Resources',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/Extreme-Agile-Community/website/discussions',
+            label: 'Forum',
+            position: 'right',
+          },
           {
             href: 'https://github.com/extreme-agile-community',
             label: 'GitHub',
