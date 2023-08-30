@@ -22,9 +22,9 @@ DevOps is a set of practices that combines software development (Dev) and IT ope
 
 ## Practices
 
-- Continuous Integration: Regularly merging code changes into a shared repository where builds and tests are run.
-- Continuous Delivery: Automatically preparing software for release to production.
-- Continuous Deployment: Automatically deploying the software to production.
-- Infrastructure as Code: Managing and provisioning computing infrastructure through machine-readable script files.
-- Automated Testing: validating the functionality match the expectation.
-- Observability: Tracking application performance and user activities to identify and resolve issues quickly.
+- [Continuous Integration](/docs/devops/continuous-integration): Regularly merging code changes into a shared repository where builds and tests are run.
+- [Continuous Delivery](/docs/devops/continuous-delivery): Automatically preparing software for release to production.
+- [Continuous Deployment](/docs/devops/continuous-deployment): Automatically deploying the software to production.
+- [Infrastructure as Code](/docs/devops/infrastructure-as-code): Managing and provisioning computing infrastructure through machine-readable script files.
+- [Automated Testing](/docs/devops/automated-testing): validating the functionality match the expectation.
+- [Observability](/docs/devopsobservability): Tracking application performance and user activities to identify and resolve issues quickly.
