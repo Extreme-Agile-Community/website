@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 # Automated testing
 
-:::node TL;DR;
+:::note TL;DR;
 Automated Testing is a key practice in software development that uses automation tools to execute predefined test cases, compare the actual results with the expected results, and report the test results. It is used to automate repetitive tasks and other testing tasks which are difficult to perform manually, thereby increasing the effectiveness, efficiency, and coverage of software testing.
 :::
 
