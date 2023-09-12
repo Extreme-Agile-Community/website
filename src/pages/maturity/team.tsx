@@ -81,8 +81,6 @@ interface IFormInput {
 }
 
 function MaturityDropdown({register, label, values}: any): JSX.Element {
-  console.log(Object.entries(values).filter(([_, value]) => typeof value !== "string"));
-  
   return (
       <div>
         <label>{label}</label>

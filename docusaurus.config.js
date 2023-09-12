@@ -77,6 +77,9 @@ const config = {
             label: 'Resources',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          { label: 'Maturity Models', position: 'right', items: [
+            {to: '/maturity/team', label: 'Team'},
+          ]},
           {
             href: 'https://github.com/Extreme-Agile-Community/website/discussions',
             label: 'Forum',
@@ -137,7 +140,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
+      }
     }),
 };
 
