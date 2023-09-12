@@ -54,12 +54,12 @@ enum ReleaseEnum {
 }
 
 enum EnvironmentsEnum {
-  "pre-production" = 0,
+  "pre-production" = 1,
   "production only" = 2
 }
 
 enum ActivationEnum {
-  "deploy" = 0,
+  "deploy" = 1,
   "feature flags" = 2
 }
 
@@ -138,14 +138,24 @@ function TeamMaturityForm({onSubmit}: any): JSX.Element {
 export default function TeamMaturityPage(): JSX.Element {
     const {siteConfig} = useDocusaurusContext();
 
-    const [ data, setData ] = useState()
+    const [ data, setData ] = useState();
+    const [ maturity, setMaturity ] = useState();
     const UpdateGraph = (result) => {
-      console.log(Object.values(result));
+      const data: any = Object.values(result).map(Number);
+      const total = data.reduce((acc, num) => num + acc, 0)
+      if(data.includes(0))
+        setMaturity("Low")
+      else if(data.every((value) => value === 2))
+        setMaturity("Elite")
+      else if(total>14)
+        setMaturity("High")
+      else
+      setMaturity("Average")
       
       setData({
       labels: Object.keys(result),
       datasets: [{
-        data: Object.values(result)
+        data
       }]
     })
   }
@@ -164,8 +174,8 @@ export default function TeamMaturityPage(): JSX.Element {
         description="Agility Content & Maturity Models">
         <main>
           <TeamMaturityForm onSubmit= {(data) => UpdateGraph(data)} />
-          {data && <Radar data={data} options={options} 
-          />}
+          {maturity && <label>Your Tean is {maturity}</label>}
+          {data && <Radar data={data} options={options} /> }
         </main>
       </Layout>
     );
