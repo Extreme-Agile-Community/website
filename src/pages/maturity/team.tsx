@@ -153,7 +153,7 @@ export default function TeamMaturityPage(): JSX.Element {
       scales: {
           r: {
               suggestedMin: 0,
-              suggestedMax: 3
+              suggestedMax: 2
           }
       }
   };
