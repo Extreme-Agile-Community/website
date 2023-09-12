@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useForm, SubmitHandler } from "react-hook-form";
-import 'bootstrap/dist/css/bootstrap.css';
+import Admonition from '@theme/Admonition';
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -14,6 +14,7 @@ import {
 } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 ChartJS.register(
   RadialLinearScale,
@@ -147,7 +148,7 @@ export default function TeamMaturityPage(): JSX.Element {
         setMaturity("Low")
       else if(data.every((value) => value === 2))
         setMaturity("Elite")
-      else if(total>14)
+      else if(total>13)
         setMaturity("High")
       else
       setMaturity("Average")
@@ -174,7 +175,15 @@ export default function TeamMaturityPage(): JSX.Element {
         description="Agility Content & Maturity Models">
         <main>
           <TeamMaturityForm onSubmit= {(data) => UpdateGraph(data)} />
-          {maturity && <label>Your Tean is {maturity}</label>}
+          {maturity && <Admonition title="Your Tean is performing at" type={
+            maturity === "Low"
+            ? "danger" 
+            : maturity === "Average"
+              ? "warning" 
+              : maturity === "High"
+                ? "info" 
+                : "tip"
+            }><h3>{maturity} Level</h3></Admonition>}
           {data && <Radar data={data} options={options} /> }
         </main>
       </Layout>
